@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p class="title">Length Converter</p>
+
+    <div class="text">
+      <p>Length</p>
+      <p>From ( Unit )</p>
+      <p>To ( Unit )</p>
+      <p></p>
+    </div>
+    
+    <div class="inputs">
+      <input class="numberLength" type="number" placeholder="Length">
+      <input class="unitFrom" type="text" placeholder="From">
+      <input class="unitTo" type="text" placeholder="To">
+      
+      <button class="calculateButton" onclick="
+      convertLength()
+      ">Calculate</button>
+    </div>
+
+    <div class="resultRow">
+      <p class="result">Result = </p>
+    </div>
+
+    <pre class="notes">Please Note:
+don't use uppercases
+you can't use all units
+    </pre>
+
+    <ul class="list">
+      <p>Supported Units:</p>
+      <li>km</li>
+      <li>miles</li>
+      <li>feet</li>
+    </ul>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
