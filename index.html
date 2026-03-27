@@ -16,8 +16,18 @@
     
     <div class="inputs">
       <input class="numberLength" type="number" placeholder="Length">
-      <input class="unitFrom" type="text" placeholder="From">
-      <input class="unitTo" type="text" placeholder="To">
+
+      <select class="unitFrom">
+        <option value="miles">Miles</option>
+        <option value="km">KMs (kilometers)</option>
+        <option value="feet">Feet</option>
+      </select>
+
+      <select class="unitTo">
+        <option value="miles">Miles</option>
+        <option value="km">KMs (kilometers)</option>
+        <option value="feet">Feet</option>
+      </select>
       
       <button class="calculateButton" onclick="
       convertLength()
@@ -29,8 +39,8 @@
     </div>
 
     <pre class="notes">Please Note:
-don't use uppercases
-you can't use all units
+not all units are usable
+you can't convert from a unit to the same unit
     </pre>
 
     <ul class="list">
