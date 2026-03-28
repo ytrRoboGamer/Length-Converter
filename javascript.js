@@ -25,6 +25,7 @@ function convertLength(length, from, to) {
   } else {
     resultP.innerHTML = 'Result = invalid units/length used'
     alert(`Invalid units/length \nPlease try again using valid units and length`);
+    return;
   }
   showResult();
 };
